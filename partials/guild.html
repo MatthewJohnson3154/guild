@@ -1,0 +1,20 @@
+<guild-header></guild-header>
+<!-- main route partial for Guild thoughts home page / -->
+<section id="guildApp" flex="none">
+    <!-- core content block for Guild thoughts -->
+    <md-content id="guildContainer" flex layout-padding ng-cloak>
+        <div layout="column" layout-fill layout-align="top">
+            <!-- CONTENT HERE -->
+            <md-content id="guildReviewContainer" flex layout-padding layout="row" layout-sm="column" layout-xs="column">
+                <guild-info></guild-info>
+                <guild-reviews></guild-reviews>
+            </md-content>
+        </div>
+    </md-content>
+</section>
+
+<!-- flex separator for sticky footer -->
+<div flex></div>
+
+<!-- Guild footer -->
+<guild-footer></guild-footer>
