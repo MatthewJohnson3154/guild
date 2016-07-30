@@ -1,61 +1,279 @@
-<!DOCTYPE html>
-<!-- update all metadata with appropriate application name/title -->
-<html id="test" lang="en" ng-app="guildApp" base="/" ng-cloak>
+<!doctype html>
+<html lang="en">
     <head>
-        <base href="/"/>
-
-        <meta name="description" content="World of Warcraft Guild">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Introducing <Relax>, a WoW Hardcore Casual Raiding Guild">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>Relax - WoW</title>
 
-        <meta http-equiv="pragma" content="no-cache">
-        <meta http-equiv="cache-control" content="no-cache">
-        <meta http-equiv="expires" content="0">
-
-        <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-        <link rel="manifest" href="images/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-
-        <title>Relax WoW</title>
-
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.0-rc.5/angular-material.min.css">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <!-- Page styles -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.min.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
 
-    <body ng-controller="MainController as mainCtrl" ng-cloak>
-        <!-- future for slideout menu or something -->
-        <!-- <guild-menu></guild-menu> -->
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+                <div class="mdl-layout__header-row">
+                    <span class="android-title mdl-layout-title">
+                        <!-- <img class="android-logo-image" src="images/android-logo.png"> -->
+                        <span class="title-guild">&lt;RELAX&gt;</span>
+                        <!-- &nbsp; <span class="title-realm">Blackrock-US</span> -->
+                    </span>
 
-        <!-- ng-view main md-content -->
-        <md-content id="main" layout="column" guild-scroll flex ng-view></md-content>
+                    <!-- Add spacer, to align navigation to the right in desktop -->
+                    <div class="android-header-spacer mdl-layout-spacer"></div>
+
+                    <!-- Navigation -->
+                    <div class="android-navigation-container">
+                        <nav class="android-navigation mdl-navigation">
+                            <a class="mdl-navigation__link mdl-typography--text-uppercase scroll" href="#about">About</a>
+                            <a class="mdl-navigation__link mdl-typography--text-uppercase scroll" href="#raids">Raids</a>
+                            <a class="mdl-navigation__link mdl-typography--text-uppercase scroll" href="#apply">Apply</a>
+                            <a class="mdl-navigation__link mdl-typography--text-uppercase scroll" href="#contact">Contact</a>
+                        </nav>
+                    </div>
+
+                    <span class="android-mobile-title mdl-layout-title">
+                        <img class="android-logo-image" src="images/android-logo.png">
+                    </span>
+                </div>
+            </div>
+
+            <div class="android-drawer mdl-layout__drawer">
+                <span class="mdl-layout-title">
+                    <img class="android-logo-image" src="images/android-logo-white.png">
+                </span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="">Phones</a>
+                    <a class="mdl-navigation__link" href="">Tablets</a>
+                    <a class="mdl-navigation__link" href="">Wear</a>
+                    <a class="mdl-navigation__link" href="">TV</a>
+                    <a class="mdl-navigation__link" href="">Auto</a>
+                    <a class="mdl-navigation__link" href="">One</a>
+                    <a class="mdl-navigation__link" href="">Play</a>
+                    <div class="android-drawer-separator"></div>
+                    <span class="mdl-navigation__link" href="">Versions</span>
+                    <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
+                    <a class="mdl-navigation__link" href="">KitKat 4.4</a>
+                    <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
+                    <a class="mdl-navigation__link" href="">Android history</a>
+                    <div class="android-drawer-separator"></div>
+                    <span class="mdl-navigation__link" href="">Resources</span>
+                    <a class="mdl-navigation__link" href="">Official blog</a>
+                    <a class="mdl-navigation__link" href="">Android on Google+</a>
+                    <a class="mdl-navigation__link" href="">Android on Twitter</a>
+                    <div class="android-drawer-separator"></div>
+                    <span class="mdl-navigation__link" href="">For developers</span>
+                    <a class="mdl-navigation__link" href="">App developer resources</a>
+                    <a class="mdl-navigation__link" href="">Android Open Source Project</a>
+                    <a class="mdl-navigation__link" href="">Android SDK</a>
+                </nav>
+            </div>
+
+            <div class="android-content mdl-layout__content">
+                <div id="top" class="android-be-together-section mdl-typography--text-center">
+                    <div class="logo-overlay">
+                        <div class="logo-font android-slogan">Relax. It's Time to Raid.</div>
+                    </div>
+
+                    <!-- <div class="logo-font android-sub-slogan">welcome to &lt;relax&gt;... be yourself. do your thing. see what's going on.</div> -->
+                    <!-- <div class="logo-font android-create-character">
+                        <a href=""><img src="images/wow.jpg"> view our progress</a>
+                    </div> -->
+
+                    <a class="scroll" href="#about">
+                        <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+                            <i class="material-icons">expand_more</i>
+                        </button>
+                    </a>
+                </div>
+
+                <div id="about" class="android-screen-section mdl-typography--text-center">
+                    <div class="mdl-typography--display-1-color-contrast">Our Raiding Philosophy</div>
+                    <div class="about-guild-text">
+                        <p class="mdl-typography--headline">
+                            At <b>&lt;Relax&gt;</b> we have focused on creating an environment that promotes research and learning to improve your gameplay while maintaining a casual schedule. While we may only be raiding in game 6-9 hours a week, we want our members to take any amount of time they can outside of the game to do things such as research their class or read up on boss strats. Doing so will likely boost their contribution every night, and as we progress, we can indicate who puts in that extra effort, and mold our Mythic progression around that team.
+                        </p>
+
+                        <p class="mdl-typography--headline">
+                            Our current plan is to raid at the Normal and Heroic level until we are able to take a crack at Mythic.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="raids" class="android-wear-section">
+                    <div class="android-wear-band">
+                        <div class="android-wear-band-text">
+                            <div class="mdl-typography--display-2 mdl-typography--font-thin">The Emerald Nightmare</div>
+                            <p class="mdl-typography--headline mdl-typography--font-thin">
+                                This is one of the first raids coming in Legion,
+                                and we'll be rushing the gates when it opens. See you inside.
+                            </p>
+                            <p>
+                                <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
+                                    See our progress&nbsp;<i class="material-icons">chevron_right</i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="apply" class="android-customized-section">
+                    <div class="android-customized-section-text">
+                        <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
+                        <p class="mdl-typography--font-light">
+                            Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
+                            <br>
+                            <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
+                        </p>
+                    </div>
+                    <!-- <div class="android-customized-section-image"></div> -->
+                </div>
+                <!-- <div class="android-more-section">
+                    <div class="android-section-title mdl-typography--display-1-color-contrast">More from Android</div>
+                    <div class="android-card-container mdl-grid">
+                        <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                            <div class="mdl-card__media">
+                                <img src="images/more-from-1.png">
+                            </div>
+                            <div class="mdl-card__title">
+                                <h4 class="mdl-card__title-text">Get going on Android</h4>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to Android quick and easy</span>
+                            </div>
+                            <div class="mdl-card__actions">
+                                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                                    Make the switch
+                                    <i class="material-icons">chevron_right</i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                            <div class="mdl-card__media">
+                                <img src="images/more-from-4.png">
+                            </div>
+                            <div class="mdl-card__title">
+                                <h4 class="mdl-card__title-text">Create your own Android character</h4>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green Android mascot into you, your friends, anyone!</span>
+                            </div>
+                            <div class="mdl-card__actions">
+                                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                                    androidify.com
+                                    <i class="material-icons">chevron_right</i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                            <div class="mdl-card__media">
+                                <img src="images/more-from-2.png">
+                            </div>
+                            <div class="mdl-card__title">
+                                <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home screen that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe away.</span>
+                            </div>
+                            <div class="mdl-card__actions">
+                                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                                    Download now
+                                    <i class="material-icons">chevron_right</i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                            <div class="mdl-card__media">
+                                <img src="images/more-from-3.png">
+                            </div>
+                            <div class="mdl-card__title">
+                                <h4 class="mdl-card__title-text">Millions to choose from</h4>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your Android device uniquely yours.</span>
+                            </div>
+                            <div class="mdl-card__actions">
+                                <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                                    Find apps
+                                    <i class="material-icons">chevron_right</i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <footer id="contact" class="android-footer mdl-mega-footer">
+                    <div class="mdl-mega-footer--top-section">
+                        <div class="mdl-mega-footer--left-section">
+                            <button class="mdl-mega-footer--social-btn"></button>
+                            &nbsp;
+                            <button class="mdl-mega-footer--social-btn"></button>
+                            &nbsp;
+                            <button class="mdl-mega-footer--social-btn"></button>
+                        </div>
+                        <div class="mdl-mega-footer--right-section">
+                            <a class="mdl-typography--font-light scroll" href="#top">
+                                Back to Top
+                                <i class="material-icons">expand_less</i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mdl-mega-footer--middle-section">
+                        <p class="mdl-typography--font-light">Satellite imagery: © 2014 Astrium, DigitalGlobe</p>
+                        <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
+                    </div>
+
+                    <div class="mdl-mega-footer--bottom-section">
+                        <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
+                            Versions
+                            <i class="material-icons">arrow_drop_up</i>
+                        </a>
+                        <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
+                            <li class="mdl-menu__item">5.0 Lollipop</li>
+                            <li class="mdl-menu__item">4.4 KitKat</li>
+                            <li class="mdl-menu__item">4.3 Jelly Bean</li>
+                            <li class="mdl-menu__item">Android History</li>
+                        </ul>
+                        <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
+                            For Developers
+                            <i class="material-icons">arrow_drop_up</i>
+                        </a>
+                        <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
+                            <li class="mdl-menu__item">App developer resources</li>
+                            <li class="mdl-menu__item">Android Open Source Project</li>
+                            <li class="mdl-menu__item">Android SDK</li>
+                            <li class="mdl-menu__item">Android for Work</li>
+                        </ul>
+                        <a class="android-link mdl-typography--font-light" href="">Blog</a>
+                        <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
+                    </div>
+
+                </footer>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+        <script>
+            $(function(){
+                $('a.scroll').click(function(){
+                    var speed = 1000;
+                    var href= $(this).attr("href");
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var container = $(".mdl-layout__content");
+                    var position = target.offset().top - container.offset().top + container.scrollTop();
+                    container.animate({scrollTop:position}, speed, "swing");
+                });
+            });
+        </script>
     </body>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-aria.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.0-rc.5/angular-material.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/controllers/main-controller.js"></script>
-    <script type="text/javascript" src="js/controllers/guild-controller.js"></script>
-    <script type="text/javascript" src="js/directives/guild-directives.js"></script>
-    <script type="text/javascript" src="js/directives/guild-dom-directives.js"></script>
-    <script type="text/javascript" src="js/lib/ngtweet.min.js"></script>
 </html>
