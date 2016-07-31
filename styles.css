@@ -219,7 +219,6 @@ a img{
 .android-screen-section {
   position: relative;
   padding-top: 80px;
-  padding-bottom: 80px;
 }
 
 .android-screens {
@@ -327,8 +326,6 @@ a img{
 .about-guild-text {
   padding: 52px;
   text-align: left;
-  color: rgba(0,0,0,0.67);
-  font-weight: 300 !important;
 }
 
 .android-wear-band-text {
