@@ -51,6 +51,10 @@ a img{
     font-weight: 300;
 }
 
+.title-guild {
+    color: #C41F3B;
+}
+
 .title-realm {
     font-size: 22px;
     letter-spacing: 1px;
@@ -62,8 +66,9 @@ a img{
 
 
 .android-logo-image {
-  height: 28px;
-  width: 140px;
+  color: white;
+  letter-spacing: 4px;
+  font-weight: 300;
 }
 
 
@@ -151,23 +156,15 @@ a img{
 
   .android-drawer .mdl-navigation__link.mdl-navigation__link {
     font-size: 14px;
-    color: #757575;
-  }
-
-  .android-drawer span.mdl-navigation__link.mdl-navigation__link {
-    color: #8bc34a;
+    color: #656565;
   }
 
   .android-drawer .mdl-layout-title {
     position: relative;
-    background: #6ab344;
-    height: 160px;
+    background: #C41F3B;
+    height: 64px;
+    padding-left: 20px;
   }
-
-    .android-drawer .android-logo-image {
-      position: absolute;
-      bottom: 16px;
-    }
 
 .android-be-together-section {
   position: relative;
@@ -444,6 +441,16 @@ a img{
 .android-footer {
   background-color: #fafafa;
   position: relative;
+}
+
+.mdl-mega-footer--social-btn, .mdl-mega-footer__social-btn {
+    background: transparent;
+    cursor: pointer;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
 }
 
   .android-footer a:hover {
