@@ -315,7 +315,7 @@ a img {
   .guild-mobile-title {
     display: block !important;
     position: absolute;
-    left: calc(50% - 56px);
+    left: calc(50% - 64px);
     top: 18px;
     transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
