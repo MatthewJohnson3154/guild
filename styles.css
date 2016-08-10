@@ -338,6 +338,10 @@ a img {
     padding-top: 32px;
   }
 
+  .guild-about-section, .guild-apply-section {
+      padding-top: 45px;
+  }
+
   .guild-about-text, .guild-apply-text {
       padding: 24px;
   }
