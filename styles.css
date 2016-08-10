@@ -9,12 +9,12 @@ a img {
 }
 
 ::-moz-selection {
-  background-color: #6ab344;
+  background-color: #A330C9;
   color: #fff;
 }
 
 ::selection {
-  background-color: #6ab344;
+  background-color: #A330C9;
   color: #fff;
 }
 
@@ -42,10 +42,18 @@ a img {
   display: none !important;
 }
 
-.guild-logo-image {
-  color: white;
+.guild-menu-logo-image {
+  color: #F1F1F1;
   letter-spacing: 4px;
   font-weight: 300;
+  font-size: 1.2em;
+}
+
+.guild-logo-image {
+  color: #C41F3B;
+  letter-spacing: 4px;
+  font-weight: 300;
+  font-size: 1.2em;
 }
 
 .guild-header {
@@ -97,7 +105,7 @@ a img {
 }
 
 .guild-navigation .mdl-navigation__link:hover {
-  border-bottom: 4px solid #8bc34a;
+  border-bottom: 4px solid #A330C9;
 }
 
 .guild-more-button {
@@ -111,14 +119,20 @@ a img {
 }
 
 .guild-drawer .mdl-navigation__link.mdl-navigation__link {
-  font-size: 14px;
-  color: #656565;
+  font-size: 16px;
+  line-height: 35px;
+  color: #434343;
+}
+
+.guild-drawer .mdl-navigation .mdl-navigation__link .material-icons {
+    margin: 0 10px 4px 0;
 }
 
 .guild-drawer .mdl-layout-title {
   position: relative;
   background: #C41F3B;
   height: 64px;
+  line-height: 64px;
   padding-left: 20px;
 }
 
@@ -150,7 +164,7 @@ a img {
 
 .guild-slogan {
   font-size: 60px;
-  padding-top: 160px;
+  padding-top: 120px;
 }
 
 .guild-about-section,.guild-apply-section {
@@ -159,8 +173,12 @@ a img {
 }
 
 .guild-about-text,.guild-apply-text {
-  padding: 52px;
+  padding: 72px;
   text-align: left;
+}
+
+.guild-about-text > p , .guild-apply-text > p {
+    font-weight: 300 !important;
 }
 
 .guild-image-link {
@@ -177,7 +195,7 @@ a img {
   position: relative;
   background: url('images/wow-art02.jpg') center 50% no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 1000px;
 }
 
 .guild-raid-band {
@@ -195,17 +213,28 @@ a img {
   color: white;
 }
 
+.guild-raid-band-text-2 {
+  max-width: 1200px;
+  padding: 24px;
+  text-align: left;
+  color: white;
+}
+
 .guild-raid-band-text p {
+  padding-top: 8px;
+}
+
+.guild-raid-band-text-2 p {
   padding-top: 8px;
 }
 
 .guild-link {
   text-decoration: none;
-  color: #8bc34a !important;
+  color: #A330C9 !important;
 }
 
 .guild-link:hover {
-  color: #7cb342 !important;
+  color: #A330C9 !important;
 }
 
 .guild-link .material-icons {
@@ -216,13 +245,13 @@ a img {
 
 .guild-alt-link {
   text-decoration: none;
-  color: #64ffda !important;
+  color: #ABD473 !important;
   font-size: 16px;
   cursor: pointer;
 }
 
 .guild-alt-link:hover {
-  color: #00bfa5 !important;
+  color: #FF7D0A !important;
 }
 
 .guild-alt-link .material-icons {
@@ -248,7 +277,7 @@ a img {
 }
 
 .guild-footer a:hover {
-  color: #8bc34a;
+  color: #A330C9;
 }
 
 .guild-footer .mdl-mega-footer--top-section::after {
@@ -257,6 +286,14 @@ a img {
 
 .guild-footer .mdl-mega-footer--middle-section::after {
   border-bottom: none;
+}
+
+.guild-footer .mdl-mega-footer--right-section {
+    margin-bottom: 0;
+}
+
+.guild-footer .mdl-mega-footer--right-section a {
+    margin-bottom: 0;
 }
 
 .guild-footer .mdl-mega-footer--right-section a .material-icons {
@@ -279,7 +316,7 @@ a img {
     display: block !important;
     position: absolute;
     left: calc(50% - 70px);
-    top: 12px;
+    top: 18px;
     transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -292,21 +329,33 @@ a img {
   }
 
   .guild-be-together-section {
-    height: 350px;
+    height: 375px;
   }
 
   .guild-slogan {
-    font-size: 26px;
+    font-size: 34px;
     margin: 0 16px;
-    padding-top: 24px;
+    padding-top: 32px;
+  }
+
+  .guild-about-text, .guild-apply-text {
+      padding: 24px;
   }
 
   .guild-fab {
     display: none;
   }
 
-  .guild-raid-band-text {
+  .guild-raid-band-text, .guild-raid-band-text-2 {
     margin-left: 0;
     padding: 16px;
+  }
+
+  .guild-footer .mdl-mega-footer--right-section {
+      margin-bottom: 16px;
+  }
+
+  .mdl-mega-footer {
+      padding: 16px 24px;
   }
 }
