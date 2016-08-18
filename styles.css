@@ -8,6 +8,10 @@ a img {
   border: 0px;
 }
 
+a {
+    color: #C41F3B;
+}
+
 ::-moz-selection {
   background-color: #A330C9;
   color: #fff;
