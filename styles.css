@@ -171,18 +171,40 @@ a {
   padding-top: 120px;
 }
 
-.guild-about-section,.guild-apply-section {
+.guild-about-section,.guild-apply-section, .guild-screenshot-section {
   position: relative;
   padding-top: 80px;
 }
 
-.guild-about-text,.guild-apply-text {
+.guild-about-text,.guild-apply-text, .guild-screenshot-text {
   padding: 72px;
   text-align: left;
 }
 
-.guild-about-text > p , .guild-apply-text > p {
+.guild-about-text > p , .guild-apply-text > p, .guild-screenshot-text > p {
     font-weight: 300 !important;
+}
+
+.guild-screenshot-text {
+    padding-top: 16px;
+}
+
+.guild-screenshot-text > p > a {
+    color: #ABD473 !important;
+}
+
+.guild-screenshot-heading {
+    padding: 0 72px;
+    text-align: left;
+}
+
+.guild-screenshot-section {
+    background-color: #37474f;
+    color: #ffffff;
+}
+
+.guild-screenshot-text {
+    color: #ffffff;
 }
 
 .guild-image-link {
@@ -212,14 +234,14 @@ a {
 
 .guild-raid-band-text {
   max-width: 800px;
-  padding: 24px;
+  padding: 24px 72px;
   text-align: left;
   color: white;
 }
 
 .guild-raid-band-text-2 {
   max-width: 1200px;
-  padding: 24px;
+  padding: 24px 72px;
   text-align: left;
   color: white;
 }
@@ -342,12 +364,16 @@ a {
     padding-top: 32px;
   }
 
-  .guild-about-section, .guild-apply-section {
+  .guild-about-section, .guild-apply-section, .guild-screenshot-section {
       padding-top: 45px;
   }
 
-  .guild-about-text, .guild-apply-text {
+  .guild-about-text, .guild-apply-text, .guild-screenshot-text {
       padding: 24px;
+  }
+
+  .guild-screenshot-heading {
+      padding: 0 24px;
   }
 
   .guild-fab {
@@ -356,7 +382,7 @@ a {
 
   .guild-raid-band-text, .guild-raid-band-text-2 {
     margin-left: 0;
-    padding: 16px;
+    padding: 24px;
   }
 
   .guild-footer .mdl-mega-footer--right-section {
@@ -366,4 +392,10 @@ a {
   .mdl-mega-footer {
       padding: 16px 24px;
   }
+}
+
+@media (max-width: 600px) {
+    .imgur-embed {
+        display: none;
+    }
 }
