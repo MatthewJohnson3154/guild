@@ -9,7 +9,7 @@ a img {
 }
 
 a {
-    color: #C41F3B;
+    color: #72c479;
 }
 
 ::-moz-selection {
@@ -27,7 +27,7 @@ a {
   right: 20%;
   bottom: -26px;
   z-index: 3;
-  background: #C41F3B !important;
+  background: #72c479 !important;
   color: white !important;
 }
 
@@ -37,7 +37,7 @@ a {
 
 .guild-title {
   font-size: 26px;
-  color: #C41F3B;
+  color: #72c479;
   letter-spacing: 4px;
   font-weight: 300;
 }
@@ -54,7 +54,7 @@ a {
 }
 
 .guild-logo-image {
-  color: #C41F3B;
+  color: #72c479;
   letter-spacing: 4px;
   font-weight: 300;
   font-size: 1.2em;
@@ -134,7 +134,7 @@ a {
 
 .guild-drawer .mdl-layout-title {
   position: relative;
-  background: #C41F3B;
+  background: #72c479;
   height: 64px;
   line-height: 64px;
   padding-left: 20px;
