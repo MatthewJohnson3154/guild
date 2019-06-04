@@ -142,10 +142,10 @@ a {
 
 .guild-be-together-section {
   position: relative;
-  height: 800px;
+  height: 700px;
   width: auto;
   background-color: #f3f3f3;
-  background: url('images/wow07.jpg') center 5% no-repeat;
+  background: url('images/wowtree.jpg') center 5% no-repeat;
   background-size: cover;
 }
 
@@ -156,19 +156,19 @@ a {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.40);
 }
 
 .guild-logo-font {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   line-height: 1;
   color: #f1f1f1;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .guild-slogan {
-  font-size: 60px;
-  padding-top: 120px;
+  font-size: 55px;
+  padding-top: 125px;
 }
 
 .guild-about-section,.guild-apply-section {
@@ -197,9 +197,9 @@ a {
 
 .guild-raid-section {
   position: relative;
-  background: url('images/wow-art02.jpg') center 50% no-repeat;
+  background: url('images/wowart.jpg') 50% 50% no-repeat;
   background-size: cover;
-  height: 1000px;
+  height: 900px;
 }
 
 .guild-raid-band {
@@ -211,7 +211,7 @@ a {
 }
 
 .guild-raid-band-text {
-  max-width: 800px;
+  max-width: 960px;
   padding: 24px;
   text-align: left;
   color: white;
